@@ -46,42 +46,70 @@
     </div>
     <!-- Preloader End -->
 
-    <!-- Header Start -->
-    <header class="main-header">
-        <div class="header-sticky">
-            <nav class="container">
-                <div class="navbar navbar-expand-lg">
-                    <!-- Logo Start -->
-                    <a class="navbar-brand" href="index.html">
-                        <img src="images/logo.svg" alt="Logo">
-                    </a>
-                    <!-- Logo End -->
+  <header class="main-header" style="position: sticky; top: 0; z-index: 999; background: rgba(34, 34, 34, 0.7); backdrop-filter: blur(2px);">
+    <div class="header-sticky">
+        <nav class="container">
+            <div class="navbar navbar-expand-lg">
+                <!-- Logo Start -->
+               <a class="navbar-brand" href="index.html" style="display: flex; align-items: center;">
+    <img src="images/WHITE - LA-TIERRA DESIGN STUDIO (1).png" alt="Logo" style="height: 100px; width: auto; max-width: 180px;">
+</a>
+                <!-- Logo End -->
 
-                    <!-- Main Menu Start -->
-                    <div class="collapse navbar-collapse main-menu" style="display: flex; justify-content: center; align-items: center; width: 100%;">
-                        <div style="flex: 1; display: flex; justify-content: center;">
-                            <ul class="navbar-nav" id="menu" style="display: flex; gap: 40px; align-items: center; margin: 0;">
-                                <li class="nav-item submenu" style="position: relative;">
-                                    <a class="nav-link" href="#" style="font-weight: bold;">Interior</a>
-                                    <ul style="position: absolute; top: 100%; left: 0; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 10px 0; min-width: 160px; display: none; z-index: 100;">
-                                        <li class="nav-item"><a class="nav-link" href="#" style="padding: 8px 20px; display: block;">Residential</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#" style="padding: 8px 20px; display: block;">Commercial</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#" style="font-weight: bold;">Automation</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div style="flex: 0 0 auto; margin-left: auto;">
-                            <a href="contact.html" class="btn-default" style="padding: 8px 24px; font-weight: bold;">Contact Us</a>
-                        </div>
+                <!-- Main Menu Start -->
+                <div class="collapse navbar-collapse main-menu" style="display: flex; justify-content: center; align-items: center; width: 100%;">
+                    <div style="flex: 1; display: flex; justify-content: center;">
+                        <ul class="navbar-nav" id="menu" style="display: flex; gap: 40px; align-items: center; margin: 0;">
+                            <li class="nav-item submenu" style="position: relative;">
+                                <a class="nav-link" href="#" style="font-weight: bold;">Interior</a>
+                                <ul style="position: absolute; top: 100%; left: 0; background: rgba(128,137,128,0.7); box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 10px 0; min-width: 180px; border-radius: 16px; display: none; z-index: 100;">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" style="padding: 12px 24px; display: block; color: #fff; font-size: 18px; border-radius: 8px; transition: background 0.2s, color 0.2s;"
+                                            onmouseover="this.style.background='none';this.style.color='#222';"
+                                            onmouseout="this.style.background='none';this.style.color='#fff';">
+                                            Residential
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" style="padding: 12px 24px; display: block; color: #fff; font-size: 18px; border-radius: 8px; transition: background 0.2s, color 0.2s;"
+                                            onmouseover="this.style.background='none';this.style.color='#222';"
+                                            onmouseout="this.style.background='none';this.style.color='#fff';">
+                                            Commercial
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item submenu" style="position: relative;">
+                                <a class="nav-link" href="#" style="font-weight: bold;">Automation</a>
+                                <ul style="position: absolute; top: 100%; left: 0; background: rgba(128,137,128,0.7); box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 10px 0; min-width: 180px; border-radius: 16px; display: none; z-index: 100;">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" style="padding: 12px 24px; display: block; color: #fff; font-size: 18px; border-radius: 8px; transition: background 0.2s, color 0.2s;"
+                                            onmouseover="this.style.background='none';this.style.color='#222';"
+                                            onmouseout="this.style.background='none';this.style.color='#fff';">
+                                            Residential
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" style="padding: 12px 24px; display: block; color: #fff; font-size: 18px; border-radius: 8px; transition: background 0.2s, color 0.2s;"
+                                            onmouseover="this.style.background='none';this.style.color='#222';"
+                                            onmouseout="this.style.background='none';this.style.color='#fff';">
+                                            Commercial
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
-                    <!-- Main Menu End -->
-                    <script>
-                        // Simple dropdown logic for Interior
-                        document.addEventListener('DOMContentLoaded', function() {
-                            var submenu = document.querySelector('.nav-item.submenu');
+                    <div style="flex: 0 0 auto; margin-left: auto;">
+                        <a href="contact.html" class="btn-default" style="padding: 8px 24px; font-weight: bold;">Contact Us</a>
+                    </div>
+                </div>
+                <!-- Main Menu End -->
+                <script>
+                    // Dropdown logic for both Interior and Automation
+                    document.addEventListener('DOMContentLoaded', function() {
+                        var submenus = document.querySelectorAll('.nav-item.submenu');
+                        submenus.forEach(function(submenu) {
                             var dropdown = submenu.querySelector('ul');
                             submenu.addEventListener('mouseenter', function() {
                                 dropdown.style.display = 'block';
@@ -90,14 +118,14 @@
                                 dropdown.style.display = 'none';
                             });
                         });
-                    </script>
-                    <div class="navbar-toggle"></div>
-                </div>
-            </nav>
-            <div class="responsive-menu"></div>
-        </div>
-    </header>
-    <!-- Header End -->
+                    });
+                </script>
+                <div class="navbar-toggle"></div>
+            </div>
+        </nav>
+        <div class="responsive-menu"></div>
+    </div>
+</header>
 
     <!-- Hero Section Start -->
     <div class="hero hero-video">
