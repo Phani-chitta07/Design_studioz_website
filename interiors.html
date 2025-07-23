@@ -38,8 +38,9 @@
 <body>
 
 
+  <body style="margin:0;padding:0;">
     <!-- Preloader Start -->
-    <div class="preloader">
+    <div class="preloader" style="margin:0;padding:0;">
         <div class="loading-container">
             <div class="loading"></div>
             <div id="loading-icon"><img src="images/WHITE - LA-TIERRA DESIGN STUDIO (1).png" alt=""></div>
@@ -47,13 +48,13 @@
     </div>
     <!-- Preloader End -->
 <!-- Header Start -->
-<header class="main-header">
-    <div class="header-sticky">
-        <nav class="container">
-            <div class="navbar navbar-expand-lg">
+<header class="main-header" style="margin:0;padding:0;position:sticky;top:0;z-index:999;transition:background 0.3s;">
+    <div class="header-sticky" style="margin:0;padding:0;">
+        <nav class="container" style="margin:0;padding:0;">
+            <div class="navbar navbar-expand-lg" style="margin:0;padding:0;">
                 <!-- Logo Start -->
-               <a class="navbar-brand" href="index.html" style="display:flex;align-items:center;">
-    <img src="images/WHITE - LA-TIERRA DESIGN STUDIO (1).png" alt="Logo" style="max-height:80px;width:auto;object-fit:contain;">
+<a class="navbar-brand" href="index.html" style="display:flex;align-items:center;margin:0;padding:0;">
+    <img src="images/WHITE - LA-TIERRA DESIGN STUDIO (1).png" alt="Logo" style="max-height:80px;width:auto;object-fit:contain;display:block;margin:0;padding:0;">
 </a>
                 <!-- Logo End -->
 
@@ -69,8 +70,6 @@
                                     <li class="nav-item"><a class="nav-link" href="automation.html">Automation</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                            
                             <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                         </ul>
                     </div>
@@ -89,6 +88,18 @@
 </header>
 <!-- Header End -->
 
+<script>
+// Sticky header color change on scroll
+window.addEventListener('scroll', function() {
+    var header = document.querySelector('.main-header');
+    if (window.scrollY > 10) {
+        header.style.background = '#272727'; // Change to your desired color
+    } else {
+        header.style.background = 'transparent'; // Original color
+    }
+});
+</script>
+
     <!-- Page Header Start -->
 	<div class="page-header parallaxie">
 		<div class="container">
@@ -96,13 +107,8 @@
 				<div class="col-lg-12">
 					<!-- Page Header Box Start -->
 					<div class="page-header-box">
-						<h1 class="text-anime-style-2" data-cursor="-opaque">Services</h1>
-						<nav class="wow fadeInUp">
-							<ol class="breadcrumb">
-								<li class="breadcrumb-item"><a href="index.html">home</a></li>
-								<li class="breadcrumb-item active" aria-current="page">services</li>
-							</ol>
-						</nav>
+						<h1 class="text-anime-style-2" data-cursor="-opaque">Interiors</h1>
+					
 					</div>
 					<!-- Page Header Box End -->
 				</div>
@@ -149,7 +155,7 @@
                     <div class="service-item wow fadeInUp">
                         <!-- Service Image Start -->
                         <div class="service-image">
-                            <a href="residential.html" data-cursor-text="View">
+                            <a href="commercial.html" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="images/service-2.jpg" alt="">
                                 </figure>
@@ -159,13 +165,13 @@
 
                         <!-- Service Button Start -->
                         <div class="service-btn">
-                            <a href="residential.html"><img src="images/arrow-white.svg" alt=""></a>
+                            <a href="commercial.html"><img src="images/arrow-white.svg" alt=""></a>
                         </div>
                         <!-- Service Button End -->
 
                         <!-- Service Content Start -->
                         <div class="service-content">
-                            <h3><a href="residential.html">commercial interior design</a></h3>
+                            <h3><a href="commercial.html">commercial interior design</a></h3>
                             <p>Enhancing business environments with professional, functional, and aesthetically.</p>
                         </div>
                         <!-- Service Content End -->
@@ -173,92 +179,6 @@
                     <!-- Service Item End -->
                 </div>
 
-                <div class="col-lg-4 col-md-6">
-                    <!-- Service Item Start -->
-                    <div class="service-item wow fadeInUp" data-wow-delay="0.2s">
-                        <!-- Service Image Start -->
-                        <div class="service-image">
-                            <a href="residential.html" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="images/service-3.jpg" alt="">
-                                </figure>
-                            </a>
-                        </div>
-                        <!-- Service Image End -->
-
-                        <!-- Service Button Start -->
-                        <div class="service-btn">
-                            <a href="residential.html"><img src="images/arrow-white.svg" alt=""></a>
-                        </div>
-                        <!-- Service Button End -->
-
-                        <!-- Service Content Start -->
-                        <div class="service-content">
-                            <h3><a href="residential.html">furniture and decor selection</a></h3>
-                            <p>Our experts help you choose the perfect furniture and decor complement your style.</p>
-                        </div>
-                        <!-- Service Content End -->
-                    </div>
-                    <!-- Service Item End -->
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <!-- Service Item Start -->
-                    <div class="service-item wow fadeInUp" data-wow-delay="0.4s">
-                        <!-- Service Image Start -->
-                        <div class="service-image">
-                            <a href="residential.html" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="images/service-4.jpg" alt="">
-                                </figure>
-                            </a>
-                        </div>
-                        <!-- Service Image End -->
-
-                        <!-- Service Button Start -->
-                        <div class="service-btn">
-                            <a href="residential.html"><img src="images/arrow-white.svg" alt=""></a>
-                        </div>
-                        <!-- Service Button End -->
-
-                        <!-- Service Content Start -->
-                        <div class="service-content">
-                            <h3><a href="residential.html">lighting design</a></h3>
-                            <p>Enhancing ambiance and functionality with thoughtfully designed lighting solutions.</p>
-                        </div>
-                        <!-- Service Content End -->
-                    </div>
-                    <!-- Service Item End -->
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <!-- Service Item Start -->
-                    <div class="service-item wow fadeInUp" data-wow-delay="0.6s">
-                        <!-- Service Image Start -->
-                        <div class="service-image">
-                            <a href="residential.html" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="images/service-5.jpg" alt="">
-                                </figure>
-                            </a>
-                        </div>
-                        <!-- Service Image End -->
-
-                        <!-- Service Button Start -->
-                        <div class="service-btn">
-                            <a href="residential.html"><img src="images/arrow-white.svg" alt=""></a>
-                        </div>
-                        <!-- Service Button End -->
-
-                        <!-- Service Content Start -->
-                        <div class="service-content">
-                            <h3><a href="residential.html">color consultation</a></h3>
-                            <p>Choosing palettes that evoke warmth, energy, or calm to match your vision.</p>
-                        </div>
-                        <!-- Service Content End -->
-                    </div>
-                    <!-- Service Item End -->
-                </div>
 
                 <div class="col-lg-4 col-md-6">
                     <!-- Service Item Start -->
