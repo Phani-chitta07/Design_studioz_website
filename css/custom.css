@@ -1939,14 +1939,14 @@ header.main-header .header-sticky.active .navbar{
 /************************************/
 
 .main-footer{
-	padding: 80px 0 0;
+	padding: 35px 0 0;
 	background: var(--primary-color);
 }
 
 .main-footer .footer-header{
 	border-bottom: 1px solid var(--dark-divider-color);
-	margin-bottom: 40px;
-	padding-bottom: 40px;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
 }
 
 .footer-social-links{
@@ -4722,5 +4722,26 @@ header.main-header .header-sticky.active .navbar{
 
 	.error-page-image img{
         max-width: 100%;
+    }
+}
+
+/* Collabridge\DesginWebsite\DSW_v1\Design_studioz_website\css\custom.css */
+/* Mobile Quote Button Styling */
+.mobile-quote {
+    display: none;
+}
+
+@media (max-width: 991px) {
+    .mobile-quote {
+        display: block;
+    }
+    
+    .mobile-quote .nav-link {
+        color: #fff !important;
+        padding: 10px 15px !important;
+    }
+    
+    .header-btn {
+        display: none !important;
     }
 }
