@@ -4727,21 +4727,66 @@ header.main-header .header-sticky.active .navbar{
 
 /* Collabridge\DesginWebsite\DSW_v1\Design_studioz_website\css\custom.css */
 /* Mobile Quote Button Styling */
-.mobile-quote {
-    display: none;
+/* Update responsive styles */
+
+/* Header button styles - Don't change existing desktop styles */
+/* Header button styles */
+.header-buttons {
+    display: flex;
+    align-items: center;
+
+    margin-left: 20px;
 }
 
-@media (max-width: 991px) {
-    .mobile-quote {
-        display: block;
-    }
-    
-    .mobile-quote .nav-link {
-        color: #fff !important;
-        padding: 10px 15px !important;
+.header-btn .btn-default {
+    padding: 12px 24px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+
+
+
+.btn-arrow {
+    width: 16px;
+    height: 16px;
+    margin-left: 18px;
+    background-image: url(../images/arrow-white.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+/* Mobile Responsive Styles */
+@media only screen and (max-width: 991px) {
+    .header-buttons {
+        margin-left: auto;
+        gap: 15px;
     }
     
     .header-btn {
+        display: block !important;
+    }
+    
+    .navbar-toggle {
+        order: 2;
+    }
+    
+    .btn-default {
+        padding: 8px 15px !important; /* Override default padding */
+        font-size: 14px;
+    }
+    
+    /* Remove arrow on mobile */
+    .btn-default::before {
         display: none !important;
+    }
+}
+
+/* Smaller screens */
+@media only screen and (max-width: 576px) {
+    .btn-default {
+        padding: 6px 12px !important;
+        font-size: 13px;
     }
 }
